@@ -1,5 +1,5 @@
-Exercício de dev web. Segundo semestre de 2022, ETEC Adolpho Berezin
+Exercício de C#.
 
 ---
 
-[Clique aqui para a lista de exercícios](https://github.com/ermogenes/aulas-programacao-web/blob/master/exercises/marcacao-html.md)
+[Clique aqui para a lista de exercícios](https://github.com/ermogenes/aulas-programacao-csharp/blob/master/exercises/lacos.md#exerc%C3%ADcio-espertocontrasabido)
