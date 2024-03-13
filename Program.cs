@@ -1,29 +1,37 @@
-﻿int alimentos;
-int distribuidos = 0;
+﻿int alimentos = 0; 
+int distribuidos = 0; 
+int qntsPicaPau = 0;
+int qntsRaposinha = 0;
 int loops = 1;
 
 Console.WriteLine("----- Esperto contra sabido -----\n");
 Console.Write("Quantos alimentos serão distribuídos? ");
 alimentos = Convert.ToInt32(Console.ReadLine());
 
-while (alimentos > distribuidos)
+while (distribuidos < alimentos)
 {
-    Console.Write($"{loops} para você, ");
+    Console.Write($"{loops} para você");
     distribuidos++;
+    qntsPicaPau++;
 
-    Console.Write($"1");
-    distribuidos++;
-
-    if (loops > 1)
+    if (distribuidos < alimentos) 
     {
-        for (int i = 2; i <= loops && distribuidos < alimentos; i++)
+        for (int i = 1; i <= loops && distribuidos < alimentos; i++)
         {
             Console.Write($", {i}");
             distribuidos++;
+            qntsRaposinha++;
         }
+
+        Console.WriteLine(" para mim.");
+
+        loops++;
+    }   
+    else
+    {
+        Console.WriteLine(".\n");
     }
-
-    Console.WriteLine(" para mim.");
-
-    loops++;
 }
+
+Console.WriteLine($"Pica-Pau recebeu {qntsPicaPau} alimento(s)");
+Console.WriteLine($"Raposinha recebeu {qntsRaposinha} alimento(s)");
